@@ -1,0 +1,24 @@
+{
+  "name": "sandbox",
+  "private": true,
+  "scripts": {
+    "dev:run": "",
+    "dev:build": "",
+    "---1---": "",
+    "check:lint": "",
+    "check:lint:fix": "",
+    "check:types": "",
+    "---2---": "",
+    "test:run": "",
+    "test:watch": ""
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.5",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
