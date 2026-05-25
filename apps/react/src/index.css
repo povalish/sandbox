@@ -6,8 +6,8 @@
     --shadow: 5px 5px 10px oklch(50% 0.1 240 / 0.5);
 
     --color-background-card: oklch(92.9% 0.013 255.508);
-    --color-background-darken-card: oklch(70.4% .04 256.788);
-    --color-border-card: oklch(86.9% .022 252.894);
+    --color-background-darken-card: oklch(70.4% 0.04 256.788);
+    --color-border-card: oklch(86.9% 0.022 252.894);
 
     --color-background-page: oklch(98.4% 0.003 247.858);
   }
@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 8px;
   background-color: var(--color-background-page);
-  
+
   min-height: 100dvh;
   overflow: hidden;
 }
@@ -45,7 +45,7 @@ body {
   flex-direction: column;
   gap: 16px;
   padding: 12px;
-  
+
   color: var(--color-white);
   background-color: var(--color-background-darken-card);
   border: 1px solid var(--color-border-card);
