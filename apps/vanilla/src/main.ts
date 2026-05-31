@@ -1,8 +1,8 @@
 import './style.css';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
-import { setupCounter } from './counter';
-import { $ } from './jQuery';
+// import { setupCounter } from './counter';
+// import { $ } from './jQuery';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -14,7 +14,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </a>
     <h1>Vite + TypeScript</h1>
     <div class="card">
-      <button id="counter" type="button"></button>
+      <button id="counter" type="button">Counter</button>
     </div>
     <p class="read-the-docs">
       Click on the Vite and TypeScript logos to learn more
@@ -22,16 +22,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `;
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
-const counter = $('#counter').html('jQuery');
-counter.hide();
+// setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
+// const counter = $('#counter').html('jQuery');
+// counter.hide();
 
-const readTheDocs = $('.read-the-docs');
-setTimeout(() => {
-  counter.show();
-  readTheDocs.html('Updated');
-}, 2_000);
+// const readTheDocs = $('.read-the-docs');
+// setTimeout(() => {
+//   counter.show();
+//   readTheDocs.html('Updated');
+// }, 2_000);
 
-counter.on('click', () => {
-  console.log('Click');
-});
+// counter.on('click', () => {
+//   console.log('Click');
+// });
