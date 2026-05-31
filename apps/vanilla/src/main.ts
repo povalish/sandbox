@@ -1,6 +1,7 @@
 import './style.css';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
+
 // import { setupCounter } from './counter';
 // import { $ } from './jQuery';
 
@@ -21,17 +22,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </p>
   </div>
 `;
-
-// setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
-// const counter = $('#counter').html('jQuery');
-// counter.hide();
-
-// const readTheDocs = $('.read-the-docs');
-// setTimeout(() => {
-//   counter.show();
-//   readTheDocs.html('Updated');
-// }, 2_000);
-
-// counter.on('click', () => {
-//   console.log('Click');
-// });
