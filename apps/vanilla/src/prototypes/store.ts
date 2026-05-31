@@ -8,12 +8,16 @@ interface IBaseCounter {
 
 const BaseCounter: IBaseCounter = {
   value: 0,
-  increase: function (num: number) { return this.value + num; },
-  decrease: function (num: number) { return this.value - num; },
+  increase: function (num: number) {
+    return this.value + num;
+  },
+  decrease: function (num: number) {
+    return this.value - num;
+  },
 };
 
 const Counter: IBaseCounter = Object.create(BaseCounter);
-console.log(Object.getPrototypeOf(Counter) === BaseCounter);  // true
+console.log(Object.getPrototypeOf(Counter) === BaseCounter); // true
 
 /** ResetableCounter */
 
@@ -31,8 +35,8 @@ const ResetableCounter: IResetableCounter = {
   },
   decrease: function (num: number): number {
     return this.value - num;
-  }
-}
+  },
+};
 
 const AdvancedCounter: IResetableCounter = Object.create(BaseCounter);
 Object.setPrototypeOf(AdvancedCounter, ResetableCounter); // override prototype
